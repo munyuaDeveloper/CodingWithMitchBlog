@@ -29,6 +29,7 @@ INSTALLED_APPS = [
     'personal',
     'account',
     'blog',
+    'rest_framework'
 ]
 
 MIDDLEWARE = [
@@ -42,6 +43,12 @@ MIDDLEWARE = [
 ]
 
 ROOT_URLCONF = 'mysite.urls'
+
+REST_FRAMEWORK = {
+    'DEFAULT_PARSER_CLASSES': [
+        'rest_framework.parsers.JSONParser',
+    ]
+}
 
 TEMPLATES = [
     {

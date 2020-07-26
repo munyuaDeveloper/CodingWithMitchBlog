@@ -1,0 +1,176 @@
+{
+	"id": "7a8907ba-1a03-1edd-1d1b-c87b24a19747",
+	"name": "my api",
+	"description": "",
+	"order": [
+		"a6511a4a-24c9-4e97-4170-2778a3cccaf7",
+		"9c4eaa0f-d505-5e65-4e67-5977d78247ec",
+		"855a1d1c-3778-d86a-cb0c-d522caf4cd91",
+		"a4723fce-959e-b11a-8010-19e7e7562ae2"
+	],
+	"folders": [],
+	"folders_order": [],
+	"timestamp": 1595751381788,
+	"owner": "8127523",
+	"public": false,
+	"requests": [
+		{
+			"id": "855a1d1c-3778-d86a-cb0c-d522caf4cd91",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://127.0.0.1:8000/api/blog/admin-first-blog-post-from-the-form/edit",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "PUT",
+			"collectionId": "7a8907ba-1a03-1edd-1d1b-c87b24a19747",
+			"data": [],
+			"dataMode": "raw",
+			"name": "http://127.0.0.1:8000/api/blog/admin-first-blog-post-from-the-form/edit",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1595751417821,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"rawModeData": "{\n\t\"title\":\"This is  a new title from the API\",\n\t\"body\":\"This is a new blog post body from the API made using postman\"\n}"
+		},
+		{
+			"id": "9c4eaa0f-d505-5e65-4e67-5977d78247ec",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://127.0.0.1:8000/api/blog/admin-first-blog-post-from-the-form/delete",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "DELETE",
+			"collectionId": "7a8907ba-1a03-1edd-1d1b-c87b24a19747",
+			"data": [],
+			"dataMode": "raw",
+			"name": "http://127.0.0.1:8000/api/blog/admin-first-blog-post-from-the-form/delete",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1595751404918,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"rawModeData": "{\n\t\"title\":\"This is  a new title from the API\",\n\t\"body\":\"This is a new blog post body from the API made using postman\"\n}"
+		},
+		{
+			"id": "a4723fce-959e-b11a-8010-19e7e7562ae2",
+			"headers": "",
+			"headerData": [],
+			"url": "http://127.0.0.1:8000/api/blog/admin-first-blog-post-from-the-form/",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "GET",
+			"collectionId": "7a8907ba-1a03-1edd-1d1b-c87b24a19747",
+			"data": [
+				{
+					"key": "title",
+					"value": "This is the new title from the api",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "body",
+					"value": "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of \"de Finibus Bonorum et Malorum\" (The Extremes of Good and Evil) by Cicero, written in 45 BC !!",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"name": "http://127.0.0.1:8000/api/blog/admin-first-blog-post-from-the-form/",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1595751434390,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {}
+		},
+		{
+			"id": "a6511a4a-24c9-4e97-4170-2778a3cccaf7",
+			"headers": "Content-Type: application/json\n//multipart/form-data: multipart/form-data\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "multipart/form-data",
+					"value": "multipart/form-data",
+					"description": "",
+					"enabled": false
+				}
+			],
+			"url": "http://127.0.0.1:8000/api/blog/create",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "POST",
+			"collectionId": "7a8907ba-1a03-1edd-1d1b-c87b24a19747",
+			"data": [
+				{
+					"key": "title",
+					"value": "This is a new blog from postman",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "body",
+					"value": "This is the body from postman",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "image",
+					"value": "",
+					"description": "",
+					"type": "file",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"name": "http://127.0.0.1:8000/api/blog/create",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1595751384299,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {}
+		}
+	]
+}
