@@ -26,7 +26,7 @@ urlpatterns = [
 
      # API URLS
      path('api/blog/', include('blog.api.urls', 'blog_api')),
-
+     path('api/account/', include('account.api.urls', 'account_api')),
 
 
     # Password reset links (ref: https://github.com/django/django/blob/master/django/contrib/auth/views.py)
