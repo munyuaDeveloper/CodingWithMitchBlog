@@ -44,12 +44,13 @@ MIDDLEWARE = [
 
 ROOT_URLCONF = 'mysite.urls'
 
-REST_FRAMEWORK = {
-    'DEFAULT_PARSER_CLASSES': [
-        'rest_framework.parsers.JSONParser',
-    ]
-}
-
+# REST_FRAMEWORK = {
+#     'DEFAULT_PARSER_CLASSES': (
+#         'rest_framework.parsers.FormParser',
+#         'rest_framework.parsers.MultiPartParser'
+#     )
+# }
+DATA_UPLOAD_MAX_NUMBER_FIELDS = 102400
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
