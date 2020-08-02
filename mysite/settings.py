@@ -29,7 +29,8 @@ INSTALLED_APPS = [
     'personal',
     'account',
     'blog',
-    'rest_framework'
+    'rest_framework',
+    'rest_framework.authtoken'
 ]
 
 MIDDLEWARE = [
@@ -44,12 +45,11 @@ MIDDLEWARE = [
 
 ROOT_URLCONF = 'mysite.urls'
 
-# REST_FRAMEWORK = {
-#     'DEFAULT_PARSER_CLASSES': (
-#         'rest_framework.parsers.FormParser',
-#         'rest_framework.parsers.MultiPartParser'
-#     )
-# }
+REST_FRAMEWORK = {
+    'DEFAULT_AUTHENTICATION_CLASSES': (
+        'rest_framework.authentication.TokenAuthentication',
+    )
+}
 DATA_UPLOAD_MAX_NUMBER_FIELDS = 102400
 TEMPLATES = [
     {
