@@ -20,7 +20,7 @@ Django==3.0.6
 django-ckeditor==5.9.0
 django-filter==2.2.0
 django-js-asset==1.2.2
-djangorestframework==3.11.0
+djangorestframework==3.11.2
 ewmh==0.1.5
 Flask==0.12.2
 Flask-BabelEx==0.9.3
